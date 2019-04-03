@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "ARScnViewController.h"
+#import "ARTraceViewController.h"
 
 @interface ViewController ()
 
@@ -17,7 +19,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
+- (IBAction)startAR:(id)sender
+{
+    ARScnViewController *arVC = [ARScnViewController new];
+    [self.navigationController pushViewController:arVC animated:YES];
+}
+
+- (IBAction)traceAR:(id)sender
+{
+    ARTraceViewController *traceVC = [ARTraceViewController new];
+    [self.navigationController pushViewController:traceVC animated:YES];
+}
 
 @end

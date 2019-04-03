@@ -1,0 +1,18 @@
+# File produced by AccuTrans 3D
+
+newmtl Orchid_Sid
+  Ns 26.4
+  d 1.0
+  illum 2
+  Kd 0.7216 0.7216 0.7216
+  Ka 0.7216 0.7216 0.7216
+  Ks 0.898 0.898 0.898
+
+newmtl Orchid_Sid_1
+  Ns 39.1
+  d 1.0
+  illum 2
+  Kd 0.7843 0.3961 0.051
+  Ka 0.7843 0.3961 0.051
+  Ks 0.898 0.898 0.898
+  map_Kd E:\ORANGE~3.jpg

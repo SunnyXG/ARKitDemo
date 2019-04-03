@@ -14,6 +14,8 @@
 		A31B9D6C22530FDB00690330 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A31B9D6A22530FDB00690330 /* LaunchScreen.storyboard */; };
 		A31B9D6F22530FDB00690330 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A31B9D6E22530FDB00690330 /* main.m */; };
 		A31B9D772253100400690330 /* ARScnViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A31B9D762253100400690330 /* ARScnViewController.m */; };
+		A31B9DA222533A3300690330 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = A31B9DA122533A3300690330 /* art.scnassets */; };
+		A31B9DA52253498400690330 /* ARTraceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A31B9DA42253498400690330 /* ARTraceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,9 @@
 		A31B9D6E22530FDB00690330 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A31B9D752253100400690330 /* ARScnViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARScnViewController.h; sourceTree = "<group>"; };
 		A31B9D762253100400690330 /* ARScnViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARScnViewController.m; sourceTree = "<group>"; };
+		A31B9DA122533A3300690330 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		A31B9DA32253498400690330 /* ARTraceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARTraceViewController.h; sourceTree = "<group>"; };
+		A31B9DA42253498400690330 /* ARTraceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARTraceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +72,14 @@
 				A31B9D6322530FDA00690330 /* ViewController.m */,
 				A31B9D752253100400690330 /* ARScnViewController.h */,
 				A31B9D762253100400690330 /* ARScnViewController.m */,
+				A31B9DA32253498400690330 /* ARTraceViewController.h */,
+				A31B9DA42253498400690330 /* ARTraceViewController.m */,
 				A31B9D6522530FDA00690330 /* Main.storyboard */,
 				A31B9D6822530FDB00690330 /* Assets.xcassets */,
 				A31B9D6A22530FDB00690330 /* LaunchScreen.storyboard */,
 				A31B9D6D22530FDB00690330 /* Info.plist */,
 				A31B9D6E22530FDB00690330 /* main.m */,
+				A31B9DA122533A3300690330 /* art.scnassets */,
 			);
 			path = ARKitDemo;
 			sourceTree = "<group>";
@@ -134,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A31B9D6C22530FDB00690330 /* LaunchScreen.storyboard in Resources */,
+				A31B9DA222533A3300690330 /* art.scnassets in Resources */,
 				A31B9D6922530FDB00690330 /* Assets.xcassets in Resources */,
 				A31B9D6722530FDA00690330 /* Main.storyboard in Resources */,
 			);
@@ -149,6 +158,7 @@
 				A31B9D6422530FDA00690330 /* ViewController.m in Sources */,
 				A31B9D6F22530FDB00690330 /* main.m in Sources */,
 				A31B9D772253100400690330 /* ARScnViewController.m in Sources */,
+				A31B9DA52253498400690330 /* ARTraceViewController.m in Sources */,
 				A31B9D6122530FDA00690330 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -279,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -291,7 +301,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = B8T7EB6U9N;
 				INFOPLIST_FILE = ARKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -299,6 +310,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sc.ARKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard_development_profile;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -307,7 +319,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = B8T7EB6U9N;
 				INFOPLIST_FILE = ARKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -315,6 +328,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.sc.ARKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = wildcard_development_profile;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
